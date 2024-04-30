@@ -13,13 +13,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #131313eb;
     height: 100vh; /* to align the content in center */
 }
 
 .container {
-    height: 640px;
-    width: 448px;
-    background-color: rgba(9, 5, 5, 0.734);
+    height: 675px;
+    width: 475px;
+    background-color: rgba(198, 130, 232, 0.850);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; /*for even gaps between the containers*/
@@ -31,6 +32,7 @@ body {
     height: 150px;
     width: 400px;
     background-color: #000000;
+    border: 3px solid rgba(255, 255, 255, 0.51);
     border-radius: 25px;
 }
 
@@ -58,32 +60,38 @@ body {
     border: 4px solid rgb(0, 0, 0);
     border-radius: 35px;
     flex: 0 0 1;
-    color: rgba(218, 238, 37, 0.756);
+    color: rgba(23, 23, 22, 0.756);
     font-size: 32px;
     text-align: center;
 }
 
 .function {
-    background-color: rgba(9, 5, 5, 0.741);
+    background-color: rgba(9, 5, 5, 0.41);
+    color:#000000
 }
 
 .function >sup {
     font-size: 20px;
 }
 .equals {
-    background-color: rgba(255, 0, 0, 0.489);
+    background-color: rgba(218, 238, 37, 0.403);
     color: aliceblue;
 }
 
 .ac {
-    background-color: rgba(218, 238, 37, 0.403);
+    background-color: rgba(255, 0, 0, 0.489);
+
     color: rgba(240, 248, 255, 0.725);
 }
 
+.back {
+    font-size: 46px;
+}
+
 .button:hover{
-    box-shadow: inset 0 0 0 50px #dce61a2e;
+    box-shadow: inset 0 0 0 50px rgba(198, 130, 232, 0.925);
 }
 
 .button:active{
-    box-shadow: inset 0 0 0 50px #f1ed087d;
+    box-shadow: inset 0 0 0 50px rgba(198, 130, 232, 0.5);
 }

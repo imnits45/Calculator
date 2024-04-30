@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* to align the content in center */
+}
+
+.container {
+    height: 640px;
+    width: 448px;
+    background-color: rgba(9, 5, 5, 0.734);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /*for even gaps between the containers*/
+    align-items: center;
+    border-radius: 10px;
+}
+
+.screen {
+    height: 150px;
+    width: 400px;
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+.buttonGrid {
+    /* height: 450px;
+    width: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 400px;
+}
+
+.button {
+    height: 80px;
+    width: 90px;
+    background-color: rgba(9, 5, 5, 0.2);
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 35px;
+    flex: 0 0 1;
+    color: rgba(218, 238, 37, 0.756);
+    font-size: 32px;
+    text-align: center;
+}
+
+.function {
+    background-color: rgba(9, 5, 5, 0.741);
+}
+
+.function >sup {
+    font-size: 20px;
+}
+.equals {
+    background-color: rgba(255, 0, 0, 0.489);
+    color: aliceblue;
+}
+
+.ac {
+    background-color: rgba(218, 238, 37, 0.403);
+    color: rgba(240, 248, 255, 0.725);
+}
+
+.button:hover{
+    box-shadow: inset 0 0 0 50px #dce61a2e;
+}
+
+.button:active{
+    box-shadow: inset 0 0 0 50px #f1ed087d;
+}

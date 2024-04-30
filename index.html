@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>         
     <script src = "script.js" defer></script>
     <link rel = "stylesheet" href = "styles.css">
     <meta charset="UTF-8">
@@ -8,42 +8,44 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class = "container"> <!--Container for calculator-->
-        <div class="screen"> <!--Container for the screen on which the evaluation will be shown-->
-
+    <div class = "container">
+        <div>
+        <div class = "screen"> <!--Container for calculator-->
+        <input class="calculate"> <!--Container for the screen on which the evaluation will be shown-->
+        <p class = "operator"></p>
         </div>
         <div class = "buttonGrid">
             <div class="buttonRow"> <!--5 rows for 20 buttons-->
                 <button class = "button ac">AC</button> <!--4 buttons in each row-->
-                <button class = "button function">x<sup>y</sup></button>
-                <button class = "button function">%</button>
-                <button class = "button function">/</button>
+                <button class = "button operators power">x<sup>y</sup></button>
+                <button class = "button operators mod">%</button>
+                <button class = "button operators divide">/</button>
             </div>
             <div class="buttonRow">
-                <button class = "button">7</button>
-                <button class = "button">8</button>
-                <button class = "button">9</button>
-                <button class = "button function">+</button>
+                <button class = "button number seven">7</button>
+                <button class = "button number eight">8</button>
+                <button class = "button number nine">9</button>
+                <button class = "button operators sum">+</button>
 
             </div>
 
             <div class="buttonRow">
-                <button class = "button">4</button>
-                <button class = "button">5</button>
-                <button class = "button">6</button>
-                <button class = "button function">-</button>
+                <button class = "button number four">4</button>
+                <button class = "button number five">5</button>
+                <button class = "button number six">6</button>
+                <button class = "button operators difference">-</button>
             </div>
 
             <div class="buttonRow">
-                <button class = "button">1</button>
-                <button class = "button">2</button>
-                <button class = "button">3</button>
-                <button class = "button function">*</button>
+                <button class = "button number one">1</button>
+                <button class = "button number two">2</button>
+                <button class = "button number three">3</button>
+                <button class = "button operators product">*</button>
             </div>
 
             <div class="buttonRow">
-                <button class = "button">0</button>
-                <button class = "button">.</button>
+                <button class = "button number zero">0</button>
+                <button class = "button number decimal">.</button>
                 <button class = "button back">&#11199;</button>
                 <button class = "button equals">=</button>
             </div>

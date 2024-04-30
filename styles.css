@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('digital-7\ \(mono\).ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 *,
 *::before,
 *::after {
@@ -29,11 +35,39 @@ body {
 }
 
 .screen {
-    height: 150px;
+    height: 125px;
     width: 400px;
     background-color: #000000;
-    border: 3px solid rgba(255, 255, 255, 0.51);
+    border: 3px solid rgba(255, 255, 255, 0.9);
     border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.calculate {
+    height: 120px;
+    width: 350px;
+    background-color: #000000;
+    border: none;
+    color: aliceblue;
+    font-family: 'Digital', sans-serif;
+    font-size: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+                                                
+}
+
+.operator {
+    font-size: 48px;
+    font-family: 'Digital', sans-serif;
+    color: aliceblue;
+    align-self: flex-end;
+    margin-right: 0.3em;
+    
 }
 
 .buttonGrid {
@@ -59,7 +93,6 @@ body {
     background-color: rgba(9, 5, 5, 0.2);
     border: 4px solid rgb(0, 0, 0);
     border-radius: 35px;
-    flex: 0 0 1;
     color: rgba(23, 23, 22, 0.756);
     font-size: 32px;
     text-align: center;
@@ -74,7 +107,7 @@ body {
     font-size: 20px;
 }
 .equals {
-    background-color: rgba(218, 238, 37, 0.403);
+    background-color: rgba(46, 36, 235, 0.403);
     color: aliceblue;
 }
 
@@ -94,4 +127,20 @@ body {
 
 .button:active{
     box-shadow: inset 0 0 0 50px rgba(198, 130, 232, 0.5);
+}
+
+.ac:hover{
+    box-shadow: inset 0 0 0 50px rgba(255, 0, 0, 0.925);
+}
+
+.ac:active{
+    box-shadow: inset 0 0 0 50px rgba(255, 0, 0, 0.5);
+}
+
+.equals:hover{
+    box-shadow: inset 0 0 0 50px rgba(46, 36, 235, 0.70);
+}
+
+.equals:active{
+    box-shadow: inset 0 0 0 50px rgba(46, 36, 235, 0.20);
 }

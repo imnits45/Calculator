@@ -33,9 +33,8 @@ body {
     align-items: center;
     border-radius: 10px;
 }
-
 .screen {
-    height: 125px;
+    height: 150px; /* Increase the height of the container */
     width: 400px;
     background-color: #000000;
     border: 3px solid rgba(255, 255, 255, 0.9);
@@ -48,7 +47,8 @@ body {
 }
 
 .calculate {
-    height: 1em;
+    height: auto; /* Reset height to auto */
+    line-height: 1.5em; /* Adjust the line-height */
     width: 350px;
     background-color: #000000;
     border: none;
@@ -58,7 +58,6 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-                                                
 }
 
 .operator {

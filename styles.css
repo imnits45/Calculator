@@ -48,7 +48,7 @@ body {
 }
 
 .calculate {
-    height: 120px;
+    height: 1em;
     width: 350px;
     background-color: #000000;
     border: none;
